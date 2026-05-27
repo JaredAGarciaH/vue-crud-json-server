@@ -20,3 +20,17 @@ npm install
 ```bash
 npm run dev
 ```
+
+## API fake
+
+Para levantar json-server:
+
+```bash
+npm run server
+```
+
+La API queda disponible en:
+
+```text
+http://localhost:8080/posts
+```
