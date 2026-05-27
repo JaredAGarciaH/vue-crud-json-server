@@ -41,6 +41,12 @@ Ya se puede crear un post desde la ruta:
 /posts/add
 ```
 
+Ya se puede ver el detalle de un post desde:
+
+```text
+/posts/:id
+```
+
 ## API fake
 
 Para levantar json-server:
