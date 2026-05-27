@@ -24,24 +24,72 @@ body {
 
 .app {
   min-height: 100vh;
-  display: grid;
-  place-items: center;
+  width: min(960px, 100%);
+  margin: 0 auto;
   padding: 2rem;
 }
 
-.intro {
-  text-align: center;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #d1d5db;
 }
 
-.intro h1 {
+.header h1 {
   margin: 0 0 0.75rem;
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
   font-weight: 700;
   color: #111827;
 }
 
-.intro p {
+.header p {
   margin: 0;
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: #4b5563;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.nav a {
+  padding: 0.625rem 0.875rem;
+  border-radius: 0.5rem;
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+  background: #ffffff;
+  border: 1px solid #dbeafe;
+}
+
+.nav a.router-link-active {
+  color: #ffffff;
+  background: #2563eb;
+  border-color: #2563eb;
+}
+
+.page {
+  margin-top: 2rem;
+  padding: 2rem;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+}
+
+.page h2 {
+  margin: 0;
+  color: #111827;
+  font-size: 1.75rem;
+}
+
+@media (max-width: 700px) {
+  .header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }

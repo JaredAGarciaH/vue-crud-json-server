@@ -1,0 +1,41 @@
+import { createRouter, createWebHistory } from 'vue-router'
+import Home from '../pages/Home.vue'
+import Posts from '../components/Posts.vue'
+import PostsAdd from '../components/PostsAdd.vue'
+import PostsView from '../components/PostsView.vue'
+import PostsEdit from '../components/PostsEdit.vue'
+
+const routes = [
+  {
+    path: '/',
+    name: 'home',
+    component: Home,
+  },
+  {
+    path: '/posts',
+    name: 'posts',
+    component: Posts,
+  },
+  {
+    path: '/posts/add',
+    name: 'posts-add',
+    component: PostsAdd,
+  },
+  {
+    path: '/posts/:id',
+    name: 'posts-view',
+    component: PostsView,
+  },
+  {
+    path: '/posts/edit/:id',
+    name: 'posts-edit',
+    component: PostsEdit,
+  },
+]
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
+})
+
+export default router
