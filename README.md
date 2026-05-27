@@ -53,6 +53,8 @@ Ya se puede editar un post desde:
 /posts/edit/:id
 ```
 
+Ya se puede eliminar un post desde el listado.
+
 ## API fake
 
 Para levantar json-server:

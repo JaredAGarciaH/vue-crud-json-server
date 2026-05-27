@@ -9,6 +9,15 @@ const getPosts = async () => {
   posts.value = response.data
 }
 
+const deletePost = async (id) => {
+  const confirmed = confirm('Deseas eliminar este post?')
+
+  if (confirmed) {
+    await axios.delete(`http://localhost:8080/posts/${id}`)
+    getPosts()
+  }
+}
+
 onMounted(() => {
   getPosts()
 })
@@ -29,7 +38,7 @@ onMounted(() => {
         <div class="post-actions">
           <RouterLink :to="`/posts/${post.id}`">Ver</RouterLink>
           <RouterLink :to="`/posts/edit/${post.id}`">Editar</RouterLink>
-          <button type="button">Eliminar</button>
+          <button type="button" @click="deletePost(post.id)">Eliminar</button>
         </div>
       </article>
     </div>
