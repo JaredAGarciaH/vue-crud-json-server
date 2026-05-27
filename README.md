@@ -47,6 +47,12 @@ Ya se puede ver el detalle de un post desde:
 /posts/:id
 ```
 
+Ya se puede editar un post desde:
+
+```text
+/posts/edit/:id
+```
+
 ## API fake
 
 Para levantar json-server:
