@@ -1,13 +1,22 @@
-# vue-crud-json-server
+# Vue CRUD JSON Server
 
-Proyecto base creado con Vue 3 y Vite para una futura aplicacion CRUD.
+Proyecto realizado como parte del tutorial CRUD con Vue.js, Composition API, Vue Router y json-server.
 
-## Tecnologias iniciales
+## Descripcion
 
-- Vue 3
+Esta aplicacion permite administrar posts mediante operaciones CRUD. El frontend esta desarrollado con Vue 3 y Vite, mientras que la API falsa se crea con json-server.
+
+## Tecnologias utilizadas
+
+- Vue.js 3
 - Vite
 - JavaScript
-- npm
+- Composition API
+- Vue Router
+- Axios
+- json-server
+- HTML
+- CSS
 
 ## Instalacion
 
@@ -15,13 +24,9 @@ Proyecto base creado con Vue 3 y Vite para una futura aplicacion CRUD.
 npm install
 ```
 
-## Desarrollo
+## Ejecutar el proyecto
 
-```bash
-npm run dev
-```
-
-Para probar el listado de posts, corre dos terminales:
+Para probar la aplicacion completa se deben usar dos terminales.
 
 Terminal 1:
 
@@ -35,36 +40,35 @@ Terminal 2:
 npm run dev
 ```
 
-Ya se puede crear un post desde la ruta:
-
-```text
-/posts/add
-```
-
-Ya se puede ver el detalle de un post desde:
-
-```text
-/posts/:id
-```
-
-Ya se puede editar un post desde:
-
-```text
-/posts/edit/:id
-```
-
-Ya se puede eliminar un post desde el listado.
-
 ## API fake
 
-Para levantar json-server:
-
-```bash
-npm run server
-```
-
-La API queda disponible en:
+json-server queda disponible en:
 
 ```text
 http://localhost:8080/posts
+```
+
+## Rutas
+
+- `/`
+- `/posts`
+- `/posts/add`
+- `/posts/:id`
+- `/posts/edit/:id`
+
+## Funcionalidades
+
+- Listar posts
+- Crear posts
+- Ver detalle de un post
+- Editar posts
+- Eliminar posts
+
+## Scripts disponibles
+
+```bash
+npm run dev
+npm run build
+npm run preview
+npm run server
 ```
