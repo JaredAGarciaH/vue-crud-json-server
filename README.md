@@ -21,6 +21,26 @@ npm install
 npm run dev
 ```
 
+Para probar el listado de posts, corre dos terminales:
+
+Terminal 1:
+
+```bash
+npm run server
+```
+
+Terminal 2:
+
+```bash
+npm run dev
+```
+
+Ya se puede crear un post desde la ruta:
+
+```text
+/posts/add
+```
+
 ## API fake
 
 Para levantar json-server:
